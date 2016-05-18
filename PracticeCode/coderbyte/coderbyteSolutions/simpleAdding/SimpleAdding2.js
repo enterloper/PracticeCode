@@ -6,3 +6,4 @@ function SimpleAdding(num) {
       return num+SimpleAdding(num-1); 
     }  
 }
+
