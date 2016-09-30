@@ -1,4 +1,5 @@
 "use strict";
+/*Has false positives! Be AWARE! */
 function ThreeSum(arr, t = false) {
   arr.slice(1,arr.length-1).forEach(function(x) {
     arr.slice(2).forEach(function(y) {
