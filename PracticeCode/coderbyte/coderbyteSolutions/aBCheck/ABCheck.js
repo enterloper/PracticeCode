@@ -9,3 +9,4 @@ function ABCheck(str){
     }
   }return false;
 }
+
