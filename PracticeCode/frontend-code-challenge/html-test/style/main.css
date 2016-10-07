@@ -1,31 +1,49 @@
 body {
-  background-color: #e6e6e6; 
+  background-color: #cacaca; 
 }
-
+#container {
+  width: 90%;
+  margin: 0 auto;
+}
 #button_container {
   width: 100%;
   display: inline-block;
-  margin: 2em 0 1em 4em;
-  font-size: .5em;
+  margin: 2em 0 1em 1em;
+  font-size: .75em;
 }
 
 .button_style {
   float: left;
-  background-color: #e6e6e6; 
+  background-color: #cacaca; 
   display: inline-block;
   width: 110px;
   height: 60px;
   margin: 14px;
   border-radius: 10px;
   border: 1px solid slategrey;
+  line-height: 10%;
 }
 
 .button_img {
   float: left;
-  margin: 10px;
 }
 
 .button_text {
   text-align: left;
-  margin-right: 5px;
+  margin: 5% 5px 0 0;
+  float: right;
+}
+
+#table_title {
+  background: linear-gradient(to top, #c1c1c1, #f0f0f0);
+  border-radius: 10px 10px 0 0 ;
+  border: 1px solid slategrey;
+  color: #676767;
+  padding-left: 2em;
+}
+
+#user_notifications {
+  width: 100%;
+  margin: 0 auto;
+
 }
