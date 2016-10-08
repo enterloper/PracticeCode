@@ -176,5 +176,9 @@ div.card {
       display: block;
       margin-top: 75px; }
 
+div.show {
+  display: none;
+}
+
 div.back {
   background-color: gray; }
