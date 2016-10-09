@@ -5,6 +5,7 @@ var publicAPI = (function() {
      this.cardType = cardType;
      return this.cardType;
     },
+
     orderDeck: function (suits = [ '♥', '♣', '♠', '♦' ], values = [ 'A', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K' ]) {
       let deck = []
       suits.forEach(function(suit) {
@@ -14,6 +15,7 @@ var publicAPI = (function() {
       });
       return deck;  
     },
+
     shuffleDeck: function (providedDeck) {
       let deck = providedDeck || this.orderDeck();
         let key, temp;
@@ -27,6 +29,7 @@ var publicAPI = (function() {
         }
      return deck;
     },
+
     cut: function (deck,number) {
       if(number<=0){ return "E1"; }
       if(number>=deck.length){ return "E2"; }
@@ -38,7 +41,8 @@ var publicAPI = (function() {
       clone.forEach( x=>{ output.push(x) } );
       return output;
     },
-    orderDeck: function (a) {
+
+    sortDeck: function (a) {
   
       const sorted = (x) => {
         let suit = x[0][1];
