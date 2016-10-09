@@ -1,3 +1,4 @@
+"use strict";
 var publicAPI = (function() {
   var Deck = {
     cardType: function(cardType = 'standard') {
@@ -25,6 +26,23 @@ var publicAPI = (function() {
           }
         }
      return deck;
+    },
+    cut: function (deck,number){
+      if(number<=0){
+        return "E1";
+      }
+      if(number>=deck.length){
+        return "E2";
+      }
+      if(deck.length<1){
+        return "E3";
+      }
+
+      let clone=Array.prototype.slice.call(arguments[0]),
+          output = clone.splice(number);
+      
+      clone.forEach( x=>{ output.push(x) } );
+      return output;
     }
   };
 
@@ -36,6 +54,6 @@ var publicAPI = (function() {
   var cardDeck = {
     Deck: Deck,
     NewDeck: NewDeck
-  }
+  };
   return cardDeck;
 }());
