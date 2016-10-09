@@ -176,9 +176,23 @@ div.card {
       display: block;
       margin-top: 75px; }
 
-div.show {
-  display: none;
-}
+#numSelect {    
+    z-index: 100;
+    border: 2px solid #04431a;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-left: 1em;
+    margin-top: 3em;
+    padding: 1em;
+    border-radius: 10px; }
+    #promptLabel {
+      font-size: .75em;
+      display:inline-block; }
 
+#numberSelector {
+  display:block;
+  margin: 2em auto;
+}
 div.back {
   background-color: gray; }

@@ -18,26 +18,32 @@
 				<option value="pinochle">Pinochle</option>
 			</select><br />
 			<br />
-			<button id="suffleButton">Shuffle</button><br />
+			<button id="shuffleButton">Shuffle</button><br />
 			<button id="cutButton">Cut</button><br />
 			<button id="dealButton">Deal</button><br />
 			<button id="sortButton">Sort Remaining</button><br />
 		</aside>
+		<div id="numSelect" class="show">
+			<label id='promptLabel'>Enter a number between 1 and 52</label>
+			<input id="numberSelector" type="number" min=1 max=52 name="numberSelector">
+		</div>
 		<section class='board'>
 			<div id="deck">
 				<div class="card back">
 				</div>
 				<div class='stats'>
-					<label># left in deck</label><span id="leftInDeck"></span>
+					<label># left in deck</label><span class="leftInDeck"></span>
 				</div>
 			</div>
 			<div id="discard">
-				<div class="card face show">
+				<div class="card face">
 					<div>
 						<span class="value">King of Clubs</span>
 					</div>
 				</div>
-				
+				<div class='stats'>
+					<label># removed</label><span id="removed"></span>
+				</div>
 			</div>
 		</section>
 	</section>
