@@ -196,3 +196,8 @@ div.card {
 }
 div.back {
   background-color: gray; }
+
+#cardCutter {
+  display:block;
+  margin: 0 auto;
+}
