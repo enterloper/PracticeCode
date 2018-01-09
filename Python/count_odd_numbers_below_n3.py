@@ -11,7 +11,5 @@ def odd_count(n):
 	while number < n:
 		count += 1
 		number += 2
+
 	return count
-
-
-print('final:', odd_count(15))
